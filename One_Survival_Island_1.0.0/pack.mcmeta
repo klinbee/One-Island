@@ -1,0 +1,29 @@
+{
+  "pack": {
+    "description": [
+      {
+        "text": "One Island in an Infinite Ocean",
+        "color": "#02c4d6"
+      },
+      "\n",
+      {
+        "text": "Made by ",
+        "color": "#AAAAAA"
+      },
+      {
+        "text": "Klinbee",
+        "color": "#ffc76f"
+      }
+    ],
+    "pack_format": 15,
+    "supported_formats": [15, 999]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": [999, 999],
+        "directory": "overlay1"
+      }
+    ]
+  }
+}

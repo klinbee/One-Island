@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:mul",
+    "comment": "The value directly below is ROUGHLY HALF the radius, in blocks.",
+    "comment": "Negative values also work, and a low enough value results in no island!",
+    "argument1": 20,
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:noise",
+        "noise": "minecraft:gravel",
+        "comment": "The value directly below is related to the roundness/jaggedness of the island.",
+        "comment": "If you double the 'radius' value, it is recommended to halve this value. But feel free to experiment :)",
+        "xz_scale": 10,
+        "y_scale": 0
+      },
+      "argument2": 1.5
+    }
+  },
+  "argument2": {
+    "type": "more_dfs:negate",
+    "argument": {
+      "type": "more_dfs:sqrt",
+      "argument": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "more_dfs:x"
+          }
+        },
+        "argument2": {
+          "type": "minecraft:square",
+          "argument": {
+            "type": "more_dfs:z"
+          }
+        }
+      }
+    }
+  }
+}
