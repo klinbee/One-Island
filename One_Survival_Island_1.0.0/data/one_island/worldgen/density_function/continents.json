@@ -1,10 +1,37 @@
 {
-    "type": "minecraft:flat_cache",
-    "argument": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:continentalness",
-      "xz_scale": 0.25,
-      "y_scale": 0
-    }
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "one_island:spawn",
+    "points": [
+      {
+        "location": -100,
+        "derivative": 0,
+        "value": {
+          "coordinate": "one_island:vanilla/continents",
+          "points": [
+            {
+              "location": -1.05,
+              "derivative": 0,
+              "value": -0.9
+            },
+            {
+              "location": 1,
+              "derivative": 0,
+              "value": -0.25
+            }
+          ]
+        }
+      },
+      {
+        "location": 0,
+        "derivative": 0,
+        "value": -0.16
+      },
+      {
+        "location": 33,
+        "derivative": 0,
+        "value": 0.2
+      }
+    ]
   }
-
+}
