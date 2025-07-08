@@ -4,7 +4,7 @@
     "coordinate": "one_island:spawn",
     "points": [
       {
-        "location": -100,
+        "location": -300,
         "derivative": 0,
         "value": {
           "coordinate": "one_island:vanilla/continents",
@@ -25,12 +25,31 @@
       {
         "location": 0,
         "derivative": 0,
-        "value": -0.16
+        "value": -0.175
       },
       {
-        "location": 33,
+        "location": 40,
         "derivative": 0,
-        "value": 0.2
+        "value": -0.11
+      },
+      {
+        "location": 100,
+        "derivative": 0.0005,
+        "value": {
+          "coordinate": "one_island:vanilla/continents",
+          "points": [
+            {
+              "location": -1,
+              "derivative": 0,
+              "value": -0.11
+            },
+            {
+              "location": 1,
+              "derivative": 0,
+              "value": 0.03
+            }
+          ]
+        }
       }
     ]
   }

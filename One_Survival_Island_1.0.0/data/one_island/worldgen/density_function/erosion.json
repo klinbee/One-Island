@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "one_island:spawn",
+    "points": [
+      {
+        "location": -300,
+        "derivative": 0,
+        "value": {
+          "coordinate": "one_island:vanilla/erosion",
+          "points": [
+            {
+              "location": 0,
+              "derivative": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      {
+        "location": 80,
+        "derivative": 0.0005,
+        "value": {
+          "coordinate": "one_island:vanilla/erosion",
+          "points": [
+            {
+              "location": -1,
+              "derivative": 0,
+              "value": -0.125
+            },
+            {
+              "location": 0,
+              "derivative": 1,
+              "value": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
